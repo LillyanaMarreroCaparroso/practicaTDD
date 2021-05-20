@@ -1,6 +1,6 @@
 public class contador {
 
-    /*private static int valorActual = 0 ;
+    private static int valorActual = 0 ;
     private static int incremento = 1;
     private static int valorLimite;
 
@@ -43,5 +43,5 @@ public class contador {
 
     public void limitar(int limite){
         
-    }*/
+    }
 }

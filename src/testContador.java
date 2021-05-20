@@ -6,6 +6,6 @@ public class testContador {
 
         @Test
         public void testConstructor(){
-            contador con = new contador(0, 1);
+            contador con = new contador(0, 1, 1);
         }
     }
