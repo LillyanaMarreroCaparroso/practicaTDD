@@ -42,7 +42,10 @@ public class contador {
     }
 
     public void incrementarContador(){
-        setValorActual(getValorActual() + getIncremento());
+        if (getValorActual() + getIncremento() > getValorLimite()) {
+            setValorActual(getValorInicial());
+        }
+        //setValorActual(getValorActual() + getIncremento());
     }
 
     public void resetearContador(){
