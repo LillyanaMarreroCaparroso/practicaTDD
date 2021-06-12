@@ -30,6 +30,6 @@ public class contador {
     }
 
     public int tenerValorActual(){
-        return this.valorActual;
+        return getValorActual();
     }
 }
