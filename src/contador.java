@@ -32,4 +32,8 @@ public class contador {
     public int tenerValorActual(){
         return getValorActual();
     }
+
+    public void incrementarContador(){
+        setValorActual(getValorActual() + getIncremento());
+    }
 }
