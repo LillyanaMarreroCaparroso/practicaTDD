@@ -3,13 +3,21 @@ public class contador {
     private static int valorActual = 0 ;
     private static int incremento = 1;
     private static int valorLimite;
+    private static int valorInicial = 0;
 
-    public contador(int valorActual, int incremento, int valorLimite) {
+    public contador(int valorActual, int incremento, int valorLimite, int valorInicial) {
         this.valorActual = valorActual;
         this.incremento = incremento;
         this.valorLimite = valorLimite;
+        this.valorInicial = valorInicial;
     }
 
+    public int getValorInicial() {
+        return valorInicial;
+    }
+    public void setValorInicial(int valorInicial) {
+        this.valorInicial = valorInicial;
+    }
     public int getValorLimite() {
         return valorLimite;
     }
@@ -35,5 +43,9 @@ public class contador {
 
     public void incrementarContador(){
         setValorActual(getValorActual() + getIncremento());
+    }
+
+    public void resetearContador(){
+        setValorActual(getValorInicial());
     }
 }
