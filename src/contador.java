@@ -29,19 +29,7 @@ public class contador {
         this.incremento = incremento;
     }
 
-    public int getValorActual(){
+    public int tenerValorActual(){
         return this.valorActual;
-    }
-
-    public void incrementar (){
-       
-    }
-
-    public int contadorInicial(){
-
-    }
-
-    public void limitar(int limite){
-        
     }
 }
