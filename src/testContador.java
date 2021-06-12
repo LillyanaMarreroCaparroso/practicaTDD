@@ -30,4 +30,11 @@ public class testContador {
             con.resetearContador();
             assertEquals(con.getValorInicial(), con.getValorActual());
         }
+
+        @Test 
+        public void testContadorDesvordado(){
+            contador con = new contador(0, 10, 1, 0);
+           con.incrementarContador();
+           assertEquals(con.getValorInicial(), con.getValorActual());
+        }
     }
