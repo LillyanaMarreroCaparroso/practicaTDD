@@ -17,4 +17,10 @@ public class testContador {
             contador con = new contador(0, 1, 1);
             assertEquals(0, con.getValorActual());
         }
+        @Test
+        public void testIncrementarContador(){
+            contador con = new contador(0, 1, 1);
+            con.incrementarContador();
+            assertEquals(1, con.getValorActual());
+        }
     }
