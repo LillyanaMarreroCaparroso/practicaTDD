@@ -23,4 +23,11 @@ public class testContador {
             con.incrementarContador();
             assertEquals(1, con.getValorActual());
         }
+
+        @Test
+        public void testResetearContador(){
+            contador con = new contador(0, 1, 1);
+            con.resetearContador();
+            assertEquals(0, con.getValorActual());
+        }
     }
